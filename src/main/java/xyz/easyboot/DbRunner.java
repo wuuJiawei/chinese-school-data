@@ -35,9 +35,9 @@ public class DbRunner {
             
             int rows = db.insert(Entity.create("saas_school")
                     .set("name", jsonObject.getStr("name"))
-                    .set("province", jsonObject.getStr("province"))
-                    .set("city", jsonObject.getStr("city"))
-                    .set("area", jsonObject.getStr("area"))
+                    .set("province", jsonObject.getStr("pname"))
+                    .set("city", jsonObject.getStr("cityname"))
+                    .set("area", jsonObject.getStr("adname"))
                     .set("address", jsonObject.getStr("address"))
                     .set("lat", locationArr[1])
                     .set("lng", locationArr[0])
